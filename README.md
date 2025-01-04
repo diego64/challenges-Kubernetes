@@ -1,9 +1,5 @@
 <p align="center">
-  <img src="img.shields.io/image/capa.png" width="500" alt="Capa" /></a>
-</p>
-
-<p align="center">
-	Developed with the software and tools below.
+  <img src="img.shields.io/image/kubernetes.png" width="500" alt="Capa" /></a>
 </p>
 
 ## 📝 Summary
@@ -34,6 +30,6 @@ The course syllabus aims to separate into 16 days (or chapters if you prefer) al
 - [ ] Uncomplicating Taints Lebels, Toleration, Affinity in K8s
 - [ ] Simplifying Networking Police and EKS
 - [ ] Uncomplicating RBAC in Kubernetes
-- [ ] Simplifying Helm | Descomplicando o Helm
+- [ ] Simplifying Helm
 
 ---
