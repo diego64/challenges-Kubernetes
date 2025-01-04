@@ -76,14 +76,9 @@ I will leave the link that shows the step by step installation of the tools for 
 > ```console
 > $ kubectl get nodes
 > ```
-> 4. Find error in .yaml file:
 >
-> ```console
-> $ yamllint meuprimeirocluster.yaml
-> ```
->
-> 5. File application
+> 4. File application
 > ```console
 > $ kubectl apply -f meuprimeirocluster.yaml
 > ```
---- 
+---
