@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: challenge-ru
+  name: challenge-ru
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: challenge-ru
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 2
+  template:
+    metadata:
+      labels:
+        app: challenge-ru
+    spec:
+      containers:
+      - image: nginx:1.16.0
+        name: nginxru
+        resources:
+          limits:
+            cpu: "500m"
+            memory: 256Mi
+          requests:
+            cpu: "0.25"
+            memory: 128Mi
