@@ -13,8 +13,8 @@ The course syllabus aims to separate into 16 days (or chapters if you prefer) al
 ## 📦️ Chapters
 
 - [x] Understanding Containers and Kubernetes
-- [ ] Demystifying Pods and Resource Limits
-- [ ] Simplifying Deployments and Rollout Strategies
+- [x] Demystifying Pods and Resource Limits
+- [x] Simplifying Deployments and Rollout Strategies
 - [ ] Simplifying ReplicaSets, DaemonSets and Kubernetes Probes
 - [ ] Creating Our Multi-Node Kubernetes Cluster
 - [ ] Simplifying Volumes in K8s
