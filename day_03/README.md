@@ -17,7 +17,7 @@ The objective of this challenge is to apply Deployment, Rollback and Rollout str
 
 ---
 
-### 🗃️ Commands for the file configured in rollingUpdate.yaml
+### 🗃️ Commands for the file configured in rollingUpdate.yaml | These commands are valid for the other file, just changing the network name
 
 <h4>From <code>source</code></h4>
 
@@ -57,8 +57,3 @@ The objective of this challenge is to apply Deployment, Rollback and Rollout str
 > ```console
 > $ kubectl delete pods --all -n day03
 > ```
-
-## 🚧 Commands for the file configured in recreate.yaml
-
-For this file, just run the same command, just changing and applying the new group.
----
