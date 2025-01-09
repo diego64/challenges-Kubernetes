@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: dpest
+  name: dpest
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: dpest
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 2
+  template:
+    metadata:
+      labels:
+        app: dpest
+    spec:
+      containers:
+      - image: nginx:1.16.0
+        name: nginxru
+        resources:
+          limits:
+            cpu: "500m"
+            memory: 256Mi
+          requests:
+            cpu: "0.25"
+            memory: 128Mi
