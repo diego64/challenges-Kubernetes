@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ngnix-nodeport
+  labels:
+    app: ngnix
+    env: dev
+spec:
+  selector:
+    app: ngnix
+  ports:
+    - port: 80 
+      protocol: TCP
+      targetPort: 8080
+      nodePort: 32000
+  type: NodePort
